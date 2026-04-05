@@ -1,0 +1,19 @@
+[project]
+name = "openclaw-whatsapp-api"
+version = "0.1.0"
+description = "WhatsApp bridge for OpenClaw — connects any OpenClaw agent to WhatsApp via Meta Cloud API"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.135",
+    "uvicorn>=0.42",
+    "httpx>=0.28",
+    "websockets>=16.0",
+    "python-dotenv>=1.2",
+    "cryptography>=44.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=9.0",
+    "pytest-asyncio>=1.3",
+]
